@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'sheerun/vim-polyglot' " Better Syntax Support
     Plug 'jiangmiao/auto-pairs' " Auto pairs for '(' '[' '{'
-    Plug 'sainnhe/sonokai' " Colorscheme
+    Plug 'sainnhe/edge' " Colorscheme
     Plug 'neoclide/coc.nvim', {'branch': 'release'} " Coc
     Plug 'vim-airline/vim-airline' " Airline
     Plug 'vim-airline/vim-airline-themes'
@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "FZF
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     "Plug 'junegunn/fzf.vim'
-    "Plug 'airblade/vim-rooter'
+    Plug 'airblade/vim-rooter'
     "Git Integration
     "Plug 'mhinz/vim-signify'
     "Plug 'tpope/vim-fugitive'
@@ -54,13 +54,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 call plug#end()
 
 set termguicolors
-let g:sonokai_style = 'shusia'
+let g:edge_style = 'neon'
 let g:sonokai_enable_italic = 0
 let g:sonokai_disable_italic_comment = 1
-colorscheme sonokai
-let g:airline_theme = 'sonokai'
+colorscheme edge
+let g:airline_theme = 'edge'
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = "\uE0B8"
+let g:airline_left_alt_sep = "\uE0B9"
+let g:airline_right_sep = "\uE0BE"
+let g:airline_right_alt_sep = "\uE0B9"
 
 
 " Use completion-nvim in every buffer
