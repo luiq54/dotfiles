@@ -47,10 +47,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     "Git Integration
-    "Plug 'mhinz/vim-signify'
-    "Plug 'tpope/vim-fugitive'
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
     "Plug 'tpope/vim-rhubarb'
     "Plug 'junegunn/gv.vim'
+    Plug 'habamax/vim-godot'    
 call plug#end()
 
 set termguicolors
@@ -87,3 +88,5 @@ nmap <s-tab> <Plug>(completion_smart_s_tab)
 
 luafile $HOME/.config/nvim/lua_settings.lua
 source $HOME/.config/nvim/coc-settings.vim
+
+
