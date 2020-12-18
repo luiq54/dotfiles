@@ -1,5 +1,6 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
+import: 
+  - /home/luiq/.config/alacritty/dracula.yml
+  
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -99,7 +100,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Jetbrains Mono Nerd Font
+    family: Fira Code Retina
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -138,7 +139,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 9.5
+  size: 11.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -161,33 +162,33 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
-colors:
-  # Default colors
-  primary:
-    background: '0x272822'
-    foreground: '0xf8f8f2'
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x272822'
+#     foreground: '0xf8f8f2'
 
-  # Normal colors
-  normal:
-    black:   '0x272822'
-    red:     '0xf92672'
-    green:   '0xa6e22e'
-    yellow:  '0xf4bf75'
-    blue:    '0x66d9ef'
-    magenta: '0xae81ff'
-    cyan:    '0xa1efe4'
-    white:   '0xf8f8f2'
+#   # Normal colors
+#   normal:
+#     black:   '0x272822'
+#     red:     '0xf92672'
+#     green:   '0xa6e22e'
+#     yellow:  '0xf4bf75'
+#     blue:    '0x66d9ef'
+#     magenta: '0xae81ff'
+#     cyan:    '0xa1efe4'
+#     white:   '0xf8f8f2'
 
-  # Bright colors
-  bright:
-    black:   '0x75715e'
-    red:     '0xf92672'
-    green:   '0xa6e22e'
-    yellow:  '0xf4bf75'
-    blue:    '0x66d9ef'
-    magenta: '0xae81ff'
-    cyan:    '0xa1efe4'
-    white:   '0xf9f8f5'
+#   # Bright colors
+#   bright:
+#     black:   '0x75715e'
+#     red:     '0xf92672'
+#     green:   '0xa6e22e'
+#     yellow:  '0xf4bf75'
+#     blue:    '0x66d9ef'
+#     magenta: '0xae81ff'
+#     cyan:    '0xa1efe4'
+#     white:   '0xf9f8f5'
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
