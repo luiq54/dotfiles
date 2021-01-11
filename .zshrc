@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/home/luiq/.local/bin:/opt/flutter/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/home/luiq/.local/bin:/opt/flutter/bin:/home/luiq/.cargo/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/luiq/.oh-my-zsh"
@@ -107,7 +107,10 @@ alias nv="nvim"
 
 export EDITOR='nvim'
 
-
+cddir(){
+	mkdir "$1"
+	cd "$1"
+}
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #Needs to be last
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

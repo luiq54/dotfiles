@@ -6,6 +6,36 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+local lualine = require('lualine')
+lualine.status()
+lualine.theme = 'onedark'
+
+require('telescope').setup{
+	defaults = {
+		file_previewer = require'telescope.previewers'.cat.new,
+	}
+}
+
+vim.g.nvim_tree_indent_markers = 1
+vim.g.nvim_tree_git_hl = 1 
+vim.g.nvim_tree_icons = {
+      default= '',
+      symlink= '',
+      git= {
+        unstaged= "✗",
+        staged= "✓",
+        unmerged= "",
+        renamed= "➜",
+        untracked= "★"
+        },
+      folder= {
+        default= "",
+        open= "",
+        symlink= "",
+        }
+      }
+
+require'bufferline'.setup()
 -- LSP STUFF
 -- local lspconfig = require('lspconfig')
 
@@ -27,3 +57,4 @@ require'nvim-treesitter.configs'.setup {
 --   on_attach = lsp_status.on_attach,
 --   capabilities = lsp_status.capabilities
 -- })
+
