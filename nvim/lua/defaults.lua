@@ -5,11 +5,13 @@ vim.g.splitbelow = true
 vim.g.splitright = true
 vim.b.autoindent = true
 vim.b.smartindent = true
--- TODO line numbers
 vim.g.nobackup = true
 vim.g.nowritebackup = true
-vim.w.signcolumn = "number"
+vim.w.signcolumn = "auto"
 vim.g.mapleader = " "
 vim.cmd('set nu')
 vim.cmd('set hidden')
 vim.cmd('set termguicolors')
+vim.cmd('set completeopt=menuone,noinsert,noselect')
+vim.cmd('set shortmess+=c')
+vim.cmd('set mouse=nv')

@@ -29,8 +29,9 @@ return require('packer').startup(function ()
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-    use 'kyazdani42/nvim-tree.lua'
+    -- use 'kyazdani42/nvim-tree.lua'
     use 'hoob3rt/lualine.nvim'
     use 'akinsho/nvim-bufferline.lua'
+    use 'neoclide/coc.nvim'
 end
 )

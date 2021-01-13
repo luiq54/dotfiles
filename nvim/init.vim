@@ -1,2 +1,3 @@
 lua require('init')
-" lua require('setup')
+
+source $HOME/.config/nvim/coc-settings.vim

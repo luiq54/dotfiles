@@ -12,7 +12,7 @@ lualine.theme = 'onedark'
 
 require('telescope').setup{
 	defaults = {
-		file_previewer = require'telescope.previewers'.cat.new,
+		file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
 	}
 }
 
@@ -36,12 +36,15 @@ vim.g.nvim_tree_icons = {
       }
 
 require'bufferline'.setup()
--- LSP STUFF
+
+
 -- local lspconfig = require('lspconfig')
 
 -- lspconfig.jdtls.setup{}
 -- lspconfig.gdscript.setup{}
-
+-- lspconfig.rust_analyzer.setup{
+--   on_attach=require'completion'.on_attach
+-- }
 
 -- Some arbitrary servers
 -- nvim_lsp.clangd.setup({
